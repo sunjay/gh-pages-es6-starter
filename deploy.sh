@@ -23,7 +23,7 @@ git commit -m "Updating gh-pages with latest code built on $(date)"
 # GitHub pages requires files to be in the root directory of the repo,
 # so subtree push forces the *contents* of the dist directory to become
 # the root only on gh-pages
-git subtree push --prefix dist origin gh-pages
+git subtree push -f --prefix dist origin gh-pages
 
 # Return to previous branch
 git checkout -

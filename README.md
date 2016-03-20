@@ -61,4 +61,7 @@ webpack configuration.
 The bundle name is `dist/bundle.js`. That can also be adjusted in the
 webpack configuration file.
 
+**Note:** Changing any of these folders or file names may break other commands that have been implemented. Do so at your own risk.
+
+When just running the development server. The bundle and other `dist/` files are kept in memory. Use the build command to explicitly put them there. This will be done for you when you deploy so you don't need to ever really do that unless you want to see the built result.
 

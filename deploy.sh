@@ -4,6 +4,9 @@ set -e
 # Checks out or creates a gh-pages branch
 git checkout gh-pages || git checkout -b gh-pages
 
+# Merge in new changes
+git merge master --no-ff
+
 # Run the build to get the latest in the dist/ folder
 npm run build
 

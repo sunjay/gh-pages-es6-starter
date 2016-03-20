@@ -49,7 +49,7 @@ You can run `npm start` and go to that address anytime now to see your code.
 ## Building & Deploying
 1. Run `npm run build` to compile all necessary files in a `dist` folder.
 
-2. Run `npm run deploy` to checkout `gh-pages` (created if not already there), build the code, commit and push the generated bundle.
+2. Run `npm run deploy` to checkout `gh-pages` (created if not already there), merge master, build the code, commit and push the generated bundle.
 
 Deploy will use `git subtree push` as described in the article [*Deploying a subfolder to GitHub pages*](https://gist.github.com/cobyism/4730490).
 

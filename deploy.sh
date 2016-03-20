@@ -22,3 +22,8 @@ git commit -m "Updating gh-pages with latest code built on $(date)"
 # the root only on gh-pages
 git subtree push --prefix dist origin gh-pages
 
+# Return to previous branch
+git checkout -
+
+echo -e "\e[32mSuccess!"
+

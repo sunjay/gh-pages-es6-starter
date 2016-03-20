@@ -18,7 +18,7 @@ git add --force --all dist/
 git status
 
 # Need to commit these files since they aren't in the index by default during development
-git commit -m "Updating gh-pages with latest code built on $(date)"
+git commit --allow-empty -m "Updating gh-pages with latest code built on $(date)"
 
 # GitHub pages requires files to be in the root directory of the repo,
 # so subtree push forces the *contents* of the dist directory to become

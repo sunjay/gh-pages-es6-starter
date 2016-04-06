@@ -20,12 +20,20 @@ pages usage and makes publishing to your `gh-pages` branch a breeze.
 ## Starter Kit Usage & Setup
 Using this starter kit is easy and just takes a few steps.
 
-1. Clone this repo using
+1. Clone this repo
 
-        git clone https://github.com/sunjay/gh-pages-es6-starter.git
+    If in an existing folder:
+
+        git clone https://github.com/sunjay/gh-pages-es6-starter.git .
+
+    For a new folder:
+
+        mkdir myproj
+        git clone https://github.com/sunjay/gh-pages-es6-starter.git myproj
 
 2. Delete the existing git repository by running
 
+        cd myproj # if you are not in the folder yet
         rm -rf .git
 
 3. Initialize a new git repository with

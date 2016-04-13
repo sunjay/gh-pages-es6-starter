@@ -5,7 +5,7 @@ set -e
 git checkout gh-pages || git checkout -b gh-pages
 
 # Merge in new changes
-git merge master --no-ff
+git merge master --no-ff --strategy-option theirs --no-edit
 
 # Run the build to get the latest in the dist/ folder
 npm run build
@@ -28,6 +28,8 @@ git push origin `git subtree split --prefix dist gh-pages`:gh-pages --force
 
 # Return to previous branch
 git checkout -
+
+git branch -D gh-pages
 
 echo -e "\e[32mSuccess!"
 

@@ -5,7 +5,7 @@ set -e
 git checkout gh-pages || git checkout -b gh-pages
 
 # Merge in new changes
-git merge master --no-ff --strategy-option theirs --no-edit
+git merge master --no-ff --strategy-option theirs --no-edit --allow-unrelated-histories
 
 # Run the build to get the latest in the dist/ folder
 npm run build

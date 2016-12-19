@@ -24,7 +24,7 @@ git commit --allow-empty -m "Updating gh-pages with latest code built on $(date)
 # so subtree push forces the *contents* of the dist directory to become
 # the root only on gh-pages
 # Update: Using subtree split now to force changes onto gh-pages (https://gist.github.com/cobyism/4730490#gistcomment-1374989)
-git push origin `git subtree split --prefix dist gh-pages`:gh-pages --force
+git push origin `git subtree split --prefix dist gh-pages`:refs/heads/gh-pages --force
 
 # Return to previous branch
 git checkout -
@@ -32,4 +32,3 @@ git checkout -
 git branch -D gh-pages
 
 echo -e "\e[32mSuccess!"
-

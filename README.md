@@ -17,6 +17,10 @@ pages usage and makes publishing to your `gh-pages` branch a breeze.
 - [CSS modules (CSS embedded in your JavaScript bundle) + usage with :local()](https://github.com/webpack/css-loader#local-scope)
 - Easy commands to build and deploy to GitHub pages on a `gh-pages` branch
 
+## Prerequisites
+
+You may need to install `yarn` via `npm install -g yarn`.
+
 ## Starter Kit Usage & Setup
 Using this starter kit is easy and just takes a few steps.
 
@@ -46,18 +50,18 @@ Using this starter kit is easy and just takes a few steps.
 your own information. Change the license if necessary to whatever suits your
 project.
 
-5. Run `npm install` to install the dependencies.
+5. Run `yarn install` to install the dependencies.
 
-6. Run `npm start` to run the development server. This will automatically hot reload your code when it changes (with some limitations).
+6. Run `yarn start` to run the development server. This will automatically hot reload your code when it changes (with some limitations).
 
-6. Go to `http://localhost:8080` to see the app running. 
+6. Go to `http://localhost:8080` to see the app running.
 
-You can run `npm start` and go to that address anytime now to see your code.
+You can run `yarn start` and go to that address anytime now to see your code.
 
 ## Building & Deploying
-1. Run `npm run build` to compile all necessary files in a `dist` folder.
+1. Run `yarn run build` to compile all necessary files in a `dist` folder.
 
-2. Run `npm run deploy` to checkout `gh-pages` (created if not already there), merge master, build the code, commit and push the generated bundle.
+2. Run `yarn run deploy` to checkout `gh-pages` (created if not already there), merge master, build the code, commit and push the generated bundle.
 
 Deploy will use `git subtree push` as described in the article [*Deploying a subfolder to GitHub pages*](https://gist.github.com/cobyism/4730490).
 
@@ -72,4 +76,3 @@ webpack configuration file.
 **Note:** Changing any of these folders or file names may break other commands that have been implemented. Do so at your own risk.
 
 When just running the development server. The bundle and other `dist/` files are kept in memory. Use the build command to explicitly put them there. This will be done for you when you deploy so you don't need to ever really do that unless you want to see the built result.
-
